@@ -26,15 +26,18 @@ main {
   width: 100%;
   background-color: var(--Light-gray);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .body {
   padding: 13px;
-  position: absolute;
-  top: 2 0%;
-  left: 20%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
   height: 60%;
-  width: 50%;  
+  width: 250px;  
   background-color: var(--White);
   border: none;
   border-radius: 10px;
@@ -73,4 +76,31 @@ main {
   font-size: 1rem;
   color: var(--Grayish-blue);
   font-family: var(--fs-outfit);
+}
+
+@media screen and (min-width: 780px) {
+  .body {
+    padding: 13px;
+    height: 75%;
+    width: 300px;  
+  }
+  
+  .qr-img {
+    height: 75%;
+  }
+  
+  .desc {
+    height: 45%;
+  } 
+  
+  .desc > h4 {
+    margin: 0.9rem 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .desc > p {
+    margin: 0.9rem 0.5rem;
+    font-size: 1.25rem;
+  }
+  
 }
